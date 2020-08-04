@@ -1,0 +1,29 @@
+[app]
+name = ggcode-python-web-app
+secret_key = sessionsecretkey1232353452
+max_login_attempt = 3
+log_path = resources/logs/ggcode-python-web-app.log
+
+[mysql]
+host = 127.0.0.1
+db = ggcode
+user = root
+password = 
+prefix =
+log_queries = true
+
+[mongodb]
+host = 127.0.0.1
+port = 27017
+db = ggcode
+
+[mongodb_history]
+host = 127.0.0.1
+port = 27017
+db = ggcode_history
+
+[blueprint_logs]
+# FILE_MAX_BYTES=50000000
+FILE_MAX_BYTES=5000000
+FILE_BACKUP_COUNT=5
+FILE_ENCODING=utf8
